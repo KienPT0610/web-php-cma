@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F1F5F9;
+  color: #333;
+}
+
+.content-container {
+  width: 100%;
+  background-color: #1E40AF;
+  padding: 15px 0;
+
+  .box-content {
+    background-color: #F1F5F9;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+}
+
+.sidebar {
+  top: 0;
+  left: 0;
+  width: 300px;
+  overflow-y: auto;
+  background-color: #1E40AF;
+  box-shadow: 0 0 15px rgba(0.1, 0.1, 0.1, 0.1);
+
+  .nav-link.active {
+    background-color: #f1f5f9;
+    color: #1e3a8a;
+    font-weight: 600;
+    border-radius: 2rem 0 0 2rem;
+    padding: 10px 16px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  ul {
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.custom-radius {
+  border-radius: 0 40% 40% 0;
+}
+
+body.dark-mode {
+  background-color: #343a40;
+  color: white;
+
+  .bg-login {
+    background-color: #1e2021;
+  }
+
+  input {
+    background-color: #495057;
+    color: white;
+    border: #343a40;
+
+    &::placeholder {
+      color: #868e96;
+    }
+
+    &:focus {
+      background-color: #495057;
+      color: white;
+      border: #343a40;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px solid #e2d9d9;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  /* Căn giữa nội dung theo chiều dọc */
+}
+
+.table .seller-info {
+  display: flex;
+  align-items: center;
+}
+
+.table .seller-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.table .seller-info .name {
+  font-weight: bold;
+}
+
+.table .seller-info .email {
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.table .status-active {
+  color: #28a745;
+  /* Màu xanh cho Active */
+}
+
+.table .status-inactive {
+  color: #dc3545;
+  /* Màu đỏ cho Inactive */
+}
+
+.table .actions a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.table .actions .edit {
+  color: #6c757d;
+}
+
+.table .actions .delete {
+  color: #dc3545;
+}
