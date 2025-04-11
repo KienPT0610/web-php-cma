@@ -20,9 +20,12 @@ $currentSellers = array_slice($sellers,$start, $perPage);
 
 <div class="p-2">
   <h3>Danh sách khách hàng</h3>
+  <?php include 'components/FilterSeller.php' ?>
   <div class="d-flex justify-content-between align-items-center mb-3">
     <div class="d-flex gap-2 align-items-center">
-      <button class="btn btn-primary">Thêm khách hàng</button>
+      <a href="/seller-add" class="text-decoration-none">
+        <button class="btn btn-primary">Thêm khách hàng</button>
+      </a>
       <div class="dropdown">
         <button class="btn bg-white border" data-bs-toggle="dropdown"><i class="bi bi-plus"></i></button>
         <ul class="dropdown-menu dropdown-menu-end">
@@ -34,16 +37,6 @@ $currentSellers = array_slice($sellers,$start, $perPage);
     </div>
     <span class="text-muted">Hiện <?php echo htmlspecialchars($perPage) ?> trong
       <?php echo htmlspecialchars($totalSellers)?> khách hàng</span>
-    <div class="d-flex gap-2 align-items-center">
-      <input id="searchInput" type="text" class="form-control" placeholder="Tìm kiếm khách hàng"
-        aria-label="Tìm kiếm khách hàng">
-      <select class="form-select w-75" aria-label="Lọc theo">
-        <option selected>Trạng thái</option>
-        <option value="1">Tất cả</option>
-        <option value="2">Hoạt động</option>
-        <option value="3">Không hoạt động</option>
-      </select>
-    </div>
   </div>
   <table class="table table-hover">
     <thead>
@@ -59,7 +52,7 @@ $currentSellers = array_slice($sellers,$start, $perPage);
     </thead>
     <tbody id="results">
       <?php
-        foreach ($currentSellers as $seller):?>
+        foreach ($currentSellers as $index => $seller):?>
       <tr>
         <td><input type="checkbox" class="form-check-input"></td>
         <td>
@@ -83,8 +76,11 @@ $currentSellers = array_slice($sellers,$start, $perPage);
         </td>
         <td class="text-center"><?php echo htmlspecialchars($seller['total_products']); ?> sản phẩm</td>
         <td class="text-center actions">
-          <a href="#" class="edit"><i class="bi bi-pencil-square"></i> Sửa</a>
-          <a href="#" class="delete"><i class="bi bi-trash"></i> Xóa</a>
+          <a href="seller-edit?id=<?= $index + ($page-1)*$perPage ?>" class="edit"><i class="bi bi-pencil-square"></i>
+            Sửa</a>
+          <a href="#" class="delete" data-bs-toggle="modal" data-bs-target="#deleteSellerModel"><i
+              class="bi bi-trash"></i>
+            Xóa</a>
         </td>
       </tr>
       <?php endforeach; ?>
@@ -123,5 +119,23 @@ $currentSellers = array_slice($sellers,$start, $perPage);
         <option value="50" <?= ($_SESSION['perPage'] ?? 10) == 50 ? 'selected' : '' ?>>50</option>
       </select>
     </form>
+  </div>
+</div>
+<div class="modal fade" id="deleteSellerModel" tabindex="-1" aria-labelledby="deleteSellerModelLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteSellerModelLabel">Xác nhận xóa khách hàng</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Bạn có chắc chắn muốn xóa khách hàng này không? <br> <strong>Hành động này không thể hoàn tác.</strong>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        <button type="button" class="btn btn-danger">Xác nhận</button>
+      </div>
+    </div>
   </div>
 </div>

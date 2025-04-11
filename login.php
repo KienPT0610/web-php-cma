@@ -18,6 +18,14 @@ session_start();
 </head>
 
 <body>
+  <script>
+  const darkMode = localStorage.getItem('darkMode') === 'true';
+  if (darkMode) {
+    document.body.classList.add('dark-mode');
+  } else {
+    document.body.classList.remove('dark-mode');
+  }
+  </script>
   <main>
     <div class="d-flex justify-content-center align-items-center vh-100">
       <div class="bg-primary w-50 h-100 d-flex flex-column justify-content-center align-items-center custom-radius">
@@ -71,7 +79,7 @@ session_start();
 
       </div>
     </div>
-    <?php include 'toogleTheme.php'; ?>
+    <?php include 'components/toogleTheme.php'; ?>
   </main>
 </body>
 

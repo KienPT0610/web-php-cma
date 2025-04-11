@@ -18,7 +18,8 @@ $path = str_replace('/','', $current_path);
           } elseif ($path == 'sellers') {
             echo 'Khách hàng';
           } else {
-            echo 'Page Not Found';
+            echo 'Trang không xác định';
+            // echo $path;
           }
           ?>
         </li>
@@ -52,7 +53,8 @@ $path = str_replace('/','', $current_path);
           <li>
             <hr class="dropdown-divider">
           </li>
-          <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i> Trang cá nhân</a></li>
+          <li><a class="dropdown-item" href="/admin-profile"><i class="bi bi-person me-2"></i> Trang cá
+              nhân</a></li>
           <li><a class="dropdown-item text-danger" href="logout.php"><i class="bi bi-box-arrow-right me-2"></i>
               Đăng xuất</a></li>
         </ul>

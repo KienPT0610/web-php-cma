@@ -44,7 +44,7 @@
         <div class="collapse show" id="sellersMenu">
           <ul class="nav flex-column ms-3">
             <li class="nav-item"><a class="nav-link" href="sellers">Danh sách</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Thêm khách hàng</a></li>
+            <li class="nav-item"><a class="nav-link" href="seller-add">Thêm khách hàng</a></li>
           </ul>
         </div>
       </li>

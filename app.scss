@@ -14,6 +14,7 @@ body {
   width: 100%;
   background-color: #1E40AF;
   padding: 15px 0;
+  min-height: 100vh;
 
   .box-content {
     background-color: #F1F5F9;
@@ -23,6 +24,60 @@ body {
     padding: 10px;
   }
 }
+
+body.dark-mode .content-container {
+  background-color: #0f172a;
+}
+
+body.dark-mode .box-content {
+  background-color: #334155;
+  color: white;
+}
+
+body.dark-mode .sidebar {
+  background-color: #0f172a;
+}
+
+body.dark-mode .sidebar ul li a {
+  color: #cbd5e1;
+}
+
+body.dark-mode .sidebar .nav-link.active {
+  background-color: #334155;
+  color: #93c5fd;
+}
+
+body.dark-mode .table {
+  color: #e2e8f0;
+}
+
+body.dark-mode .table th,
+body.dark-mode .table td {
+  background-color: #334155;
+  color: white;
+  border-color: #334155;
+}
+
+body.dark-mode .table .seller-info .email {
+  color: #94a3b8;
+}
+
+body.dark-mode .table .status-active {
+  color: #22c55e;
+}
+
+body.dark-mode .table .status-inactive {
+  color: #ef4444;
+}
+
+body.dark-mode .table .actions .edit {
+  color: #94a3b8;
+}
+
+body.dark-mode .table .actions .delete {
+  color: #ef4444;
+}
+
 
 .sidebar {
   top: 0;
@@ -66,7 +121,7 @@ body.dark-mode {
   }
 
   input {
-    background-color: #495057;
+    background-color: #1e293b;
     color: white;
     border: #343a40;
 
@@ -75,10 +130,20 @@ body.dark-mode {
     }
 
     &:focus {
-      background-color: #495057;
+      background-color: #1a2530;
       color: white;
       border: #343a40;
     }
+  }
+
+  select {
+    background-color: #1e293b;
+    color: white;
+  }
+
+  textarea {
+    background-color: #1e293b;
+    color: white;
   }
 }
 

@@ -6,9 +6,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Form Register Info</title>
+  <link rel="stylesheet" href="app.scss">
 </head>
 
 <body>
+  <script>
+  const darkMode = localStorage.getItem('darkMode') === 'true';
+  if (darkMode) {
+    document.body.classList.add('dark-mode');
+  } else {
+    document.body.classList.remove('dark-mode');
+  }
+  </script>
   <div class="p-5">
     <form class="form-register" novalidate>
       <h2>Đăng ký thông tin</h2>
@@ -113,6 +122,8 @@
       </div>
     </form>
   </div>
+  <?php include 'components/toogleTheme.php'; ?>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
