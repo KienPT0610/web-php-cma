@@ -7,7 +7,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Không hoạt động',
     'total_products' => 40,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Trần Quốc Bảo',
@@ -16,7 +16,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Không hoạt động',
     'total_products' => 61,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Lê Thị Cẩm Tú',
@@ -25,7 +25,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Hoạt động',
     'total_products' => 149,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Phạm Minh Đức',
@@ -34,7 +34,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Hoạt động',
     'total_products' => 93,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Ngô Thanh Huyền',
@@ -43,7 +43,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Hoạt động',
     'total_products' => 108,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Hoàng Anh Tuấn',
@@ -52,7 +52,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Hoạt động',
     'total_products' => 43,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Lê Văn Quỳnh',
@@ -61,7 +61,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Không hoạt động',
     'total_products' => 122,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Nguyễn Thị Mai',
@@ -70,7 +70,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Hoạt động',
     'total_products' => 45,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Trần Quốc Hà',
@@ -79,7 +79,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Không hoạt động',
     'total_products' => 78,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Phạm Thị Nhung',
@@ -88,7 +88,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Hoạt động',
     'total_products' => 101,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Dương Đức Oanh',
@@ -97,7 +97,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Hoạt động',
     'total_products' => 67,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Hoàng Thị Lan',
@@ -106,7 +106,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Không hoạt động',
     'total_products' => 59,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Trịnh Tuấn An',
@@ -115,7 +115,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Hoạt động',
     'total_products' => 134,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Nguyễn Thị Vy',
@@ -124,7 +124,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Hoạt động',
     'total_products' => 88,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Đỗ Hữu Hà',
@@ -133,7 +133,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Không hoạt động',
     'total_products' => 56,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Vũ Thị Thảo',
@@ -142,7 +142,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Hoạt động',
     'total_products' => 76,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Lâm Nhật Huyền',
@@ -151,7 +151,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Hoạt động',
     'total_products' => 112,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Đặng Thị Quỳnh',
@@ -160,7 +160,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Không hoạt động',
     'total_products' => 91,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Lê Văn Tú',
@@ -169,7 +169,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Không hoạt động',
     'total_products' => 23,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Nguyễn Thị Oanh',
@@ -178,7 +178,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Hoạt động',
     'total_products' => 115,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Hoàng Anh Hà',
@@ -187,7 +187,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Hoạt động',
     'total_products' => 60,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Đỗ Thị Trang',
@@ -196,7 +196,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Không hoạt động',
     'total_products' => 49,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Dương Đức Bảo',
@@ -205,7 +205,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Không hoạt động',
     'total_products' => 128,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Nguyễn Thị Yến',
@@ -214,7 +214,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Hoạt động',
     'total_products' => 73,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Bùi Công An',
@@ -223,7 +223,7 @@ return $sellers = [
     'gender' => 'Nam',
     'status' => 'Không hoạt động',
     'total_products' => 99,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ],
   [
     'name' => 'Nguyễn Thị Nhung',
@@ -232,7 +232,7 @@ return $sellers = [
     'gender' => 'Nữ',
     'status' => 'Hoạt động',
     'total_products' => 147,
-    'image' => 'images/avatar.png'
+    'image' => '/assets/images/avatar.png'
   ]
 ];
 ?>

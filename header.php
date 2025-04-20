@@ -45,7 +45,7 @@ $path = str_replace('/','', $current_path);
       <!-- Account -->
       <div class="dropdown">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-          <img src="images/logo.png" alt="Profile" class="rounded-circle" width="30" height="30">
+          <img src="/assets/images/avatar.png" alt="Profile" class="rounded-circle" width="30" height="30">
         </button>
         <ul class="dropdown-menu dropdown-menu-end">
           <li class="dropdown-header"> <strong class="text-primary">John Belus</strong> <br><small>Frontend

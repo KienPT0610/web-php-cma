@@ -19,11 +19,17 @@
   }
   </script>
   <div class="p-5">
-    <form class="form-register" novalidate>
+    <?php include 'database/users/users.php' ?>
+    <?php
+    if (isset($_GET['message'])) {
+      echo '<div class="alert alert-success" role="alert">' . $_GET['message'] . '</div>';
+    }
+    ?>
+    <form class="form-register" method="POST" novalidate>
       <h2>Đăng ký thông tin</h2>
       <!-- Name -->
       <div class="row">
-        <div class="col-md-6 mb-3">
+        <div class="col-12 col-md-6 mb-3">
           <label for="firstName" class="form-label">Họ</label>
           <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Nhập họ của bạn"
             required>
@@ -31,7 +37,7 @@
             Họ không hợp lệ!
           </div>
         </div>
-        <div class="col-md-6 mb-3">
+        <div class="col-12 col-md-6 mb-3">
           <label for="lastName" class="form-label">Tên</label>
           <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Nhập tên của bạn" required>
           <div class="invalid-feedback">
@@ -87,22 +93,22 @@
       </div>
 
       <!-- Interest -->
-      <div class="mb-3 d-flex gap-3">
+      <div class="mb-3">
         <label for="interest" class="form-label">Sở thích:</label>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="interest" id="readBook" value="readBook" />
+          <input class="form-check-input" type="checkbox" name="interest[]" id="readBook" value="readBook" />
           <label class="form-check-label" for="">Đọc sách</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="interest" id="music" value="music" />
+          <input class="form-check-input" type="checkbox" name="interest[]" id="music" value="music" />
           <label class="form-check-label" for="">Nghe nhạc</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="interest" id="watchTV" value="watchTV" />
+          <input class="form-check-input" type="checkbox" name="interest[]" id="watchTV" value="watchTV" />
           <label class="form-check-label" for="">Xem phim</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="interest" id="football" value="football" />
+          <input class="form-check-input" type="checkbox" name="interest[]" id="football" value="football" />
           <label class="form-check-label" for="">Bóng đá</label>
         </div>
       </div>
@@ -116,9 +122,10 @@
       <!-- Button -->
       <div class="mb-3">
         <button type="submit" class="btn btn-primary">
-          <a href="index.php" class="text-decoration-none text-white">Đăng ký</a>
+          <!-- <a href="index.php" class="text-decoration-none text-white">Đăng ký</a> -->Submit
         </button>
         <button type="reset" class="btn btn-primary">Làm lại</button>
+        <a href="index.php" class="btn btn-primary">Quay lại</a>
       </div>
     </form>
   </div>

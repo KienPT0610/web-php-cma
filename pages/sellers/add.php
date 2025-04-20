@@ -5,7 +5,7 @@
     <div class="mb-3">
       <label for="avatar" class="form-label" hidden>Avatar</label>
       <div class="avatar-preview mb-2">
-        <img src="images/avatar.png" alt="Avatar Preview" id="avatarPreview" class="rounded-circle" width="100"
+        <img src="/assets/images/avatar.png" alt="Avatar Preview" id="avatarPreview" class="rounded-circle" width="100"
           height="100">
       </div>
       <input type="file" class="form-control" id="avatar" name="avatar" accept="image/*" required>

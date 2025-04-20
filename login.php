@@ -29,7 +29,7 @@ session_start();
   <main>
     <div class="d-flex justify-content-center align-items-center vh-100">
       <div class="bg-primary w-50 h-100 d-flex flex-column justify-content-center align-items-center custom-radius">
-        <img src="images/image-login.png" alt="Placeholder Image" />
+        <img src="/assets/images/image-login.png" alt="Placeholder Image" />
         <div class="text-center text-white p-4">
           <h3>Chào mừng bạn đến với trang đăng nhập</h3>
           <p class="">Vui lòng nhập thông tin của bạn để tiếp tục</p>

@@ -14,4 +14,7 @@ if($path=="/seller-edit") {
 if ($path== '/admin-profile') {
   include 'pages/admin/profile.php'; 
 }
+if($path== '/dashboard') {
+  include 'pages/admin/dashboard.php'; 
+}
 ?>
